@@ -1,0 +1,281 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf6f0;
+  color: #2b2320;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------- Top bar -------- */
+.top-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ddce;
+  padding: 18px 40px;
+}
+
+.top-bar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 26px;
+  font-style: italic;
+  color: #a6472c;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.menu-links a {
+  color: #2b2320;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu-links a:hover {
+  color: #a6472c;
+}
+
+.btn-book {
+  background-color: #2b2320;
+  color: #ffffff;
+  padding: 10px 22px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.btn-book:hover {
+  background-color: #a6472c;
+}
+
+/* -------- Banner -------- */
+.banner {
+  position: relative;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 40px;
+}
+
+.banner img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+}
+
+.banner-text h2 {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+.banner-text p {
+  font-size: 16px;
+}
+
+/* -------- Menu Section -------- */
+.food-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.food-group {
+  margin-bottom: 50px;
+}
+
+.food-group h3 {
+  color: #a6472c;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.food-box {
+  background-color: #ffffff;
+  border: 1px solid #e6ddce;
+  padding: 20px;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.food-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.food-title-row h4 {
+  font-size: 16px;
+}
+
+.cost {
+  color: #a6472c;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.food-box p {
+  font-size: 13px;
+  color: #6b6157;
+  line-height: 1.6;
+}
+
+/* -------- About Section -------- */
+.about-us {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-info h3 {
+  color: #a6472c;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.about-info p {
+  font-size: 14px;
+  color: #4a4038;
+  margin-bottom: 16px;
+}
+
+.btn-line {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 24px;
+  border: 1px solid #2b2320;
+  color: #2b2320;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.btn-line:hover {
+  background-color: #2b2320;
+  color: #ffffff;
+}
+
+.about-pic {
+  flex: 1;
+}
+
+.about-pic img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* -------- Footer -------- */
+footer {
+  background-color: #2b2320;
+  color: #f7f1e8;
+  padding: 50px 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-part h4 {
+  color: #a6472c;
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.footer-part p {
+  font-size: 13px;
+  color: #cfc6b8;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  color: #cfc6b8;
+  font-size: 13px;
+}
+
+.footer-list a:hover {
+  color: #ffffff;
+}
+
+.bottom-text {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  color: #8f8577;
+  border-top: 1px solid #443a30;
+  padding-top: 18px;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 768px) {
+  .top-bar-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+}
